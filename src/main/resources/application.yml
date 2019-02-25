@@ -1,0 +1,15 @@
+server:
+  port: 8888
+eureka:
+  client:
+    service-url:
+      defaultZone: http://123.207.39.91:8761/eureka/
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/yundanfeng/MyTest
+          searchPaths: config
+  application:
+    name: config-server
